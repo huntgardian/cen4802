@@ -7,7 +7,19 @@ public class Main {
         Scanner myObj = new Scanner(System.in);
         System.out.println("Enter number of terms to go to:  ");
 
-        int n = parseInt(myObj.nextLine());
+        int number = parseInt(myObj.nextLine());
+
+        fibonacciTime(number);
+
+    }
+
+
+    /**
+     * This is a class that when provided int, n, will output n number of Fibonacci terms.
+     *
+     * @param n the number of time the Fibonacci sequence will iterate.
+     */
+    static void fibonacciTime(int n) {
 
         int firstTerm = 0, secondTerm = 1;
         System.out.println("Fibonacci Series till " + n + " terms:");
@@ -18,5 +30,5 @@ public class Main {
             firstTerm = secondTerm;
             secondTerm = nextTerm;
         }
-    }
+    };
 }
